@@ -1,0 +1,1572 @@
+{
+	"info": {
+		"_postman_id": "09a7312e-1437-4aa7-a638-dfc97ac55c7a",
+		"name": "E-commerce",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "Sign Up",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"wlm\",\r\n    \"email\":\"uci69770@omeie.com\",\r\n    \"password\":\"Adminadmin@123\",\r\n    \"confirmationPassword\":\"Adminadmin@123\",\r\n    \"phone\":\"01128226765\",\r\n    \"age\":\"54\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/auth/signup",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"auth",
+								"signup"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add img if u login and has no img Copy",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0NDkwNWRkYjE5NDg5NGFjYTA2MjljZCIsImlhdCI6MTY4MjUxNjIzNSwiZXhwIjoxNjgyNTE5ODM1fQ.kV28Ca47PTDV99D-w9G_gvnZznabotAS2N5MCtyy6Tc",
+								"type": "default",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/F:/personal photos/New folder/IMG_20220224_141158.jpg"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/auth/addprofileimg/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Im5hbWUiOiJ3bG0iLCJjdXN0b21JZCI6ImgtR2NRIiwic2x1ZyI6IndsbSIsImVtYWlsIjoidWNpNjk3NzBAb21laWUuY29tIiwicGFzc3dvcmQiOiIkMmEkMDgkc3dQU3pJZGlpTGpNNkJPc1R6YzJrTzk0WDZOd0hxNlY0blpzanJCNzNBVlhzV3pjZDNyWjYiLCJhZ2UiOjU0LCJwaG9uZSI6IjAxMTI4MjI2NzY1IiwiaXNEZWxldGVkIjpmYWxzZSwidW5kb0lzRGVsZXRlZENvZGUiOm51bGwsImNvbmZpcm1lZCI6ZmFsc2UsInJvbGUiOiJ1c2VyIiwiZm9yZ2V0UGFzc3dvcmRDb2RlIjpudWxsLCJfaWQiOiI2NDQ5MzliYTI0ZmU3YzBjYjFhMWM5MmIifSwiaWF0IjoxNjgyNTIwNTA2LCJleHAiOjE2ODI1MjQxMDZ9.qGn3zw6Gdf5W4WW0mLBjTApgg6HSfTnmZS1tvTBXDb0",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"auth",
+								"addprofileimg",
+								"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Im5hbWUiOiJ3bG0iLCJjdXN0b21JZCI6ImgtR2NRIiwic2x1ZyI6IndsbSIsImVtYWlsIjoidWNpNjk3NzBAb21laWUuY29tIiwicGFzc3dvcmQiOiIkMmEkMDgkc3dQU3pJZGlpTGpNNkJPc1R6YzJrTzk0WDZOd0hxNlY0blpzanJCNzNBVlhzV3pjZDNyWjYiLCJhZ2UiOjU0LCJwaG9uZSI6IjAxMTI4MjI2NzY1IiwiaXNEZWxldGVkIjpmYWxzZSwidW5kb0lzRGVsZXRlZENvZGUiOm51bGwsImNvbmZpcm1lZCI6ZmFsc2UsInJvbGUiOiJ1c2VyIiwiZm9yZ2V0UGFzc3dvcmRDb2RlIjpudWxsLCJfaWQiOiI2NDQ5MzliYTI0ZmU3YzBjYjFhMWM5MmIifSwiaWF0IjoxNjgyNTIwNTA2LCJleHAiOjE2ODI1MjQxMDZ9.qGn3zw6Gdf5W4WW0mLBjTApgg6HSfTnmZS1tvTBXDb0"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Log In Admin",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"zex89557@zslsz.com\",\r\n    \"password\":\"Adminadmin@123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/auth/login",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Log In user",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"vox91326@nezid.com\",\r\n    \"password\":\"Adminadmin@123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/auth/login",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add img if u login and has no img",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Im5hbWUiOiJ0ZXN0IiwiY3VzdG9tSWQiOiJCSDNXNiIsInNsdWciOiJ0ZXN0IiwiZW1haWwiOiJqaGYxOTQzOEBuZXppZC5jb20iLCJwYXNzd29yZCI6IiQyYSQwOCRuUUZtODQweE52c1hQdHU0a3N6SExldlhLTG5RY29lYUFEeUJnZzkyWjh4ZHlUdmRneWpjQyIsImFnZSI6MjMsInBob25lIjoiMDExNDM0MzI2MzciLCJpc0RlbGV0ZWQiOmZhbHNlLCJ1bmRvSXNEZWxldGVkQ29kZSI6bnVsbCwiY29uZmlybWVkIjpmYWxzZSwicm9sZSI6InVzZXIiLCJmb3JnZXRQYXNzd29yZENvZGUiOm51bGwsIl9pZCI6IjY0NDkzNTU2ZTZlODkxYmUxYTJiMjc0ZCJ9LCJpYXQiOjE2ODI1MTkzODIsImV4cCI6MTY4MjUyMjk4Mn0.DXmPXTACYhH6fgXKo1T3WKZEcgONrptxZZ3chhHiyZ8",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/F:/personal photos/IMG-20220315-WA0019.jpg"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/auth/firsttimeaddprofileimgwhilelogin",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"auth",
+								"firsttimeaddprofileimgwhilelogin"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update user img",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0NDkyMzVmZDQwNzM4ZmZjYzg1MDk5ZSIsImlhdCI6MTY4MjUxODI1MiwiZXhwIjoxNjgyNTIxODUyfQ.6y_D1LXeYXaDGc4FCWupsyYRTYSNi-44-qmfMgm_VVU",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/F:/personal photos/IMG-20220315-WA0031.jpg"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/auth/updateimg",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"auth",
+								"updateimg"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update password or change password while loging in",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0NDkwZjM3NWZjZmViMjFlOTc4Zjg4YSIsImlhdCI6MTY4MjUxMjUwMywiZXhwIjoxNjgyNTE2MTAzfQ.t1fiT801xwg-OQL8w2W2lFsAafVUB-W6B_uAKuZ1S2Q",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"currentPassword\":\"adminAdmin@123\",\r\n    \"newPassword\":\"AdminAdmin@123\",\r\n    \"newConfirmationPassword\":\"AdminAdmin@123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/auth/updatepassword",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"auth",
+								"updatepassword"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "forget pass send email",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/auth/forgetpasscode/xyw10736@omeie.com",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"auth",
+								"forgetpasscode",
+								"xyw10736@omeie.com"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "forget pass actuall implemantiom",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n     \r\n    \"forgetPasswordCode\":\"-3Hr8n\",\r\n    \"newPassword\":\"adminAdmin@123\",\r\n    \"newConfirmationPassword\":\"adminAdmin@123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/auth/resetpassword/xyw10736@omeie.com",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"auth",
+								"resetpassword",
+								"xyw10736@omeie.com"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete user",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0NDc1ZDJmNjRiZTE2NDUyMzJjNGEyYiIsImlhdCI6MTY4MjQyNzkxNiwiZXhwIjoxNjgyNDMxNTE2fQ.aj4oFZN7g-g9sPojN-hhHWA-LmMi3-lD-PO595Vxi_U",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/auth/delete",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"auth",
+								"delete"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "soft delete user",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0NDkxZTlmZjYxNmI2NTI1ODBjNjU5ZCIsImlhdCI6MTY4MjUxMzU5OCwiZXhwIjoxNjgyNTE3MTk4fQ.CjmUzVCfZ6LS7h6LA4wsO0JhIpz-9QX-Ati-4QGBOLU",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/auth/softdelete",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"auth",
+								"softdelete"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update profile info",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0NDkwZjM3NWZjZmViMjFlOTc4Zjg4YSIsImlhdCI6MTY4MjUxMjcyNiwiZXhwIjoxNjgyNTE2MzI2fQ.N12_KFtLO_quxrLPfDHLfwmq9qXxhTqolbg1Hz6Ugzk",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"age\":\"66\",\r\n    \"phone\":\"01555855529\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/auth//updateprofile",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"auth",
+								"",
+								"updateprofile"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "log out",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0NDc1ZGNkNjRiZTE2NDUyMzJjNGEzMCIsImlhdCI6MTY4MjQzNTY2OCwiZXhwIjoxNjgyNDM5MjY4fQ.LwjxMriVOUBqLB3fjnd4pL2TbVnPaAonvMVwtX4Uhtk",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/auth/logout",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"auth",
+								"logout"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "undo softdelete send mail",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/auth/mailundosoftdelete/vox91326@nezid.com",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"auth",
+								"mailundosoftdelete",
+								"vox91326@nezid.com"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "undo softdelete logic",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"undoIsDeletedCode\":\"JvnSY1\" \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/auth/undosoftdelete/vox91326@nezid.com",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"auth",
+								"undosoftdelete",
+								"vox91326@nezid.com"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Category",
+			"item": [
+				{
+					"name": "add category",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0NDkwNWRkYjE5NDg5NGFjYTA2MjljZCIsImlhdCI6MTY4MjUzNzQ4MSwiZXhwIjoxNjgyNTQxMDgxfQ.Vtkrsf_XU0zBeww76ZiMUcrVD0EtNzKqnt7fDN6N92w",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "FASHION",
+									"type": "default"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/C:/Users/Abo El-Magd/Desktop/temp/creative-fashion-logo-design-vector-sign-lettering-hanger-symbol-logotype-calligraphy-creative-fashion-logo-design-109522002.jpg"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/category/createcategory",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"category",
+								"createcategory"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update category name and image",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0NDkwNTFiYjE5NDg5NGFjYTA2MjliZCIsImlhdCI6MTY4MjUzODk3MSwiZXhwIjoxNjgyNTQyNTcxfQ.uvhQObE5zF1kD6pyiWEJG7bqkEKsI8OXqyQyIFfu8qM",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "fashon",
+									"type": "default"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/C:/Users/Abo El-Magd/Desktop/temp/download.jpg"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/category/updatecategory/64498829f64991e79820ef84",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"category",
+								"updatecategory",
+								"64498829f64991e79820ef84"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete category",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0NDkwNTFiYjE5NDg5NGFjYTA2MjliZCIsImlhdCI6MTY4MjUzODk3MSwiZXhwIjoxNjgyNTQyNTcxfQ.uvhQObE5zF1kD6pyiWEJG7bqkEKsI8OXqyQyIFfu8qM",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "fashons",
+									"type": "default"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/C:/Users/Abo El-Magd/Desktop/temp/360_F_490688793_6X9BGaxxZLkgDGoUQcLAUVvdEJQVWJUh.jpg"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/category/deletecategory/644982a739fed5d40f187d6f",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"category",
+								"deletecategory",
+								"644982a739fed5d40f187d6f"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "1 subcat FROM CATE MERGE PARAMS",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0NDkwNWRkYjE5NDg5NGFjYTA2MjljZCIsImlhdCI6MTY4MjU1MTgyNSwiZXhwIjoxNjgyNTU1NDI1fQ.8GcRUxgEVBuQrqYoggqPtseeZnyyPfGpI6U2t7Io01o",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/category/64497d430bc3ca5938badb92/subcategory/6449a48c07dfcf3527ef709b",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"category",
+								"64497d430bc3ca5938badb92",
+								"subcategory",
+								"6449a48c07dfcf3527ef709b"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get all cates with its subcates virtuals",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0NDkwNWRkYjE5NDg5NGFjYTA2MjljZCIsImlhdCI6MTY4MjYzODQwMCwiZXhwIjoxNjgyNjQyMDAwfQ.ohFnpsY16pUmJYFc1v2fJm_YhS-LbpSFHGUW1gHfoCc",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/category/getcatwithsubcats",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"category",
+								"getcatwithsubcats"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get one category info with its subcate and brands",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0NDkwNWRkYjE5NDg5NGFjYTA2MjljZCIsImlhdCI6MTY4MjYzODQwMCwiZXhwIjoxNjgyNjQyMDAwfQ.ohFnpsY16pUmJYFc1v2fJm_YhS-LbpSFHGUW1gHfoCc",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/ecommerce/v1/category/get/64497d430bc3ca5938badb92",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"ecommerce",
+								"v1",
+								"category",
+								"get",
+								"64497d430bc3ca5938badb92"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get all category info with its subcate and brands",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0NDkwNWRkYjE5NDg5NGFjYTA2MjljZCIsImlhdCI6MTY4MjYzNjI4MywiZXhwIjoxNjgyNjM5ODgzfQ.PdPec0cQfX4vyPavZVmUpkcCZPSr22IBzCJ3b0nWxPo",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/category/getall",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"category",
+								"getall"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "SubCategory",
+			"item": [
+				{
+					"name": "add SubCategory",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0NDkwNWRkYjE5NDg5NGFjYTA2MjljZCIsImlhdCI6MTY4MjU0NzQwMywiZXhwIjoxNjgyNTUxMDAzfQ.euW0toJFKGxkG1hpK_-UZQ0qZUblXbMb4mDm2j_hbn0",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "shoes",
+									"type": "default"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/C:/Users/Abo El-Magd/Desktop/temp/cld-sample-5.jpg"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/subcategory/addsubcategory/64498829f64991e79820ef84",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"subcategory",
+								"addsubcategory",
+								"64498829f64991e79820ef84"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update subcate name and img mergeParms",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0NDkwNWRkYjE5NDg5NGFjYTA2MjljZCIsImlhdCI6MTY4MjU0NzQwMywiZXhwIjoxNjgyNTUxMDAzfQ.euW0toJFKGxkG1hpK_-UZQ0qZUblXbMb4mDm2j_hbn0",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "MOBILE PHONE",
+									"type": "default",
+									"disabled": true
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/C:/Users/Abo El-Magd/Desktop/temp/images (1).png"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/category/64497d430bc3ca5938badb92/subcategory/updatesubcategory/6449a2f2c5053293284cfc26",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"category",
+								"64497d430bc3ca5938badb92",
+								"subcategory",
+								"updatesubcategory",
+								"6449a2f2c5053293284cfc26"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete subCategory",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0NDkwNWRkYjE5NDg5NGFjYTA2MjljZCIsImlhdCI6MTY4MjYzMjEyMiwiZXhwIjoxNjgyNjM1NzIyfQ.WOJy5z7Y4UqLDLzMYWQwfRXFqwbsnbSgdzXfzK92qOs",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/subcategory/deletesubcategory/644aede3a8e60c7e61a63893",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"subcategory",
+								"deletesubcategory",
+								"644aede3a8e60c7e61a63893"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get one sub category",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0NDkwNWRkYjE5NDg5NGFjYTA2MjljZCIsImlhdCI6MTY4MjYzNjI4MywiZXhwIjoxNjgyNjM5ODgzfQ.PdPec0cQfX4vyPavZVmUpkcCZPSr22IBzCJ3b0nWxPo",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/subcategory/getsubcategory/6449a48c07dfcf3527ef709b",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"subcategory",
+								"getsubcategory",
+								"6449a48c07dfcf3527ef709b"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get all subcates with its brands virtuals",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0NDkwNWRkYjE5NDg5NGFjYTA2MjljZCIsImlhdCI6MTY4MjYzNjI4MywiZXhwIjoxNjgyNjM5ODgzfQ.PdPec0cQfX4vyPavZVmUpkcCZPSr22IBzCJ3b0nWxPo",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/subcategory/getsubcateswithbrands",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"subcategory",
+								"getsubcateswithbrands"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Brand",
+			"item": [
+				{
+					"name": "add brand",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0NDkwNWRkYjE5NDg5NGFjYTA2MjljZCIsImlhdCI6MTY4MjY5MDIzMCwiZXhwIjoxNjgyNjkzODMwfQ.NdyILWNljMmdMfL6fm6EUWKRUT_to1DiCS3BJfudf74",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "dell",
+									"type": "default"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/C:/Users/Abo El-Magd/Desktop/temp/HD-wallpaper-dell-black-silk-background-dell-logo-emblem.jpg"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/ecommerce/v1/brand/addbrand/6449a48c07dfcf3527ef709b",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"ecommerce",
+								"v1",
+								"brand",
+								"addbrand",
+								"6449a48c07dfcf3527ef709b"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add brand by merge params",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0NDkwNWRkYjE5NDg5NGFjYTA2MjljZCIsImlhdCI6MTY4MjYzNDA3NiwiZXhwIjoxNjgyNjM3Njc2fQ.SBeAB2WvTu1-JqfX4WU1yeYsyDhykuFH9vD4MDxl_RE",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "oppo",
+									"type": "default"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/C:/Users/Abo El-Magd/Desktop/temp/download (2).png"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/ecommerce/v1/category/64497e3ee0955fca237f94b4/subcategory/6449a2f2c5053293284cfc26/brand/add",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"ecommerce",
+								"v1",
+								"category",
+								"64497e3ee0955fca237f94b4",
+								"subcategory",
+								"6449a2f2c5053293284cfc26",
+								"brand",
+								"add"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "adidas ",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update brand",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0NDkwNWRkYjE5NDg5NGFjYTA2MjljZCIsImlhdCI6MTY4MjYzNjEzNCwiZXhwIjoxNjgyNjM5NzM0fQ.OacqImkK0ShPH_kQ7_WXZIGQh_BJil5iHwGA63jj0EU",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "oppppo00000",
+									"type": "default",
+									"disabled": true
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/C:/Users/Abo El-Magd/Desktop/temp/41FQ-HlNyRL._SY445_SX342_QL70_ML2_.jpg"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/category/64497d430bc3ca5938badb92/subcategory/6449a2f2c5053293284cfc26/brand/updatebrand/644afa45bf6fcdacd45e2f54",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"category",
+								"64497d430bc3ca5938badb92",
+								"subcategory",
+								"6449a2f2c5053293284cfc26",
+								"brand",
+								"updatebrand",
+								"644afa45bf6fcdacd45e2f54"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get all brand",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0NDkwNWRkYjE5NDg5NGFjYTA2MjljZCIsImlhdCI6MTY4MjYzNDA3NiwiZXhwIjoxNjgyNjM3Njc2fQ.SBeAB2WvTu1-JqfX4WU1yeYsyDhykuFH9vD4MDxl_RE",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/brand/all",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"brand",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get one brand",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0NDkwNWRkYjE5NDg5NGFjYTA2MjljZCIsImlhdCI6MTY4MjYzNDA3NiwiZXhwIjoxNjgyNjM3Njc2fQ.SBeAB2WvTu1-JqfX4WU1yeYsyDhykuFH9vD4MDxl_RE",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/brand/getbrand/644af600c86628cd245dec1a",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"brand",
+								"getbrand",
+								"644af600c86628cd245dec1a"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete brand",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0NDkwNWRkYjE5NDg5NGFjYTA2MjljZCIsImlhdCI6MTY4MjYzNDA3NiwiZXhwIjoxNjgyNjM3Njc2fQ.SBeAB2WvTu1-JqfX4WU1yeYsyDhykuFH9vD4MDxl_RE",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/brand/deletebrand/644af600c86628cd245dec1a",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"brand",
+								"deletebrand",
+								"644af600c86628cd245dec1a"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Product",
+			"item": [
+				{
+					"name": "add Product with merge params",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0NDkwNWRkYjE5NDg5NGFjYTA2MjljZCIsImlhdCI6MTY4ODAzNzE1NCwiZXhwIjoxNjg4MDQwNzU0fQ.rTPKaODxS3LOIeZ2vfQwM31xDJsL7519qtdggO_LtmQ",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "tshirt",
+									"type": "default"
+								},
+								{
+									"key": "stock",
+									"value": "152",
+									"type": "default"
+								},
+								{
+									"key": "price",
+									"value": "100",
+									"type": "default"
+								},
+								{
+									"key": "discount",
+									"value": "50",
+									"type": "default"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/F:/personal photos/New folder/IMG_20220224_134142.jpg"
+								},
+								{
+									"key": "subImgs",
+									"type": "file",
+									"src": "/F:/personal photos/New folder/IMG_20220224_135700.jpg"
+								},
+								{
+									"key": "subImgs",
+									"type": "file",
+									"src": "/F:/personal photos/New folder/IMG_20220224_140017.jpg"
+								},
+								{
+									"key": "subImgs",
+									"type": "file",
+									"src": [],
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/category/64498829f64991e79820ef84/subcategory/6449a4aa07dfcf3527ef70a0/brand/644afa32bf6fcdacd45e2f4c/product/addproduct",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"category",
+								"64498829f64991e79820ef84",
+								"subcategory",
+								"6449a4aa07dfcf3527ef70a0",
+								"brand",
+								"644afa32bf6fcdacd45e2f4c",
+								"product",
+								"addproduct"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update Product",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0NDkwNWRkYjE5NDg5NGFjYTA2MjljZCIsImlhdCI6MTY4MjY5MDIzMCwiZXhwIjoxNjgyNjkzODMwfQ.NdyILWNljMmdMfL6fm6EUWKRUT_to1DiCS3BJfudf74",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "d7kkk dmahmoud laptop",
+									"type": "default",
+									"disabled": true
+								},
+								{
+									"key": "stock",
+									"value": "10",
+									"type": "default",
+									"disabled": true
+								},
+								{
+									"key": "price",
+									"value": "100",
+									"type": "default",
+									"disabled": true
+								},
+								{
+									"key": "discount",
+									"value": "50",
+									"type": "default",
+									"disabled": true
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": [],
+									"disabled": true
+								},
+								{
+									"key": "subImgs",
+									"type": "file",
+									"src": [],
+									"disabled": true
+								},
+								{
+									"key": "subImgs",
+									"type": "file",
+									"src": "/F:/personal photos/New folder/IMG_20220224_134142.jpg",
+									"disabled": true
+								},
+								{
+									"key": "subImgs",
+									"type": "file",
+									"src": "/F:/personal photos/New folder/IMG_20220224_135700.jpg",
+									"disabled": true
+								},
+								{
+									"key": "description",
+									"value": "wlkjlfnwefwklnfflwknf;klvmw;wlkm v ;wlkmv",
+									"type": "default",
+									"disabled": true
+								},
+								{
+									"key": "price",
+									"value": "233",
+									"type": "default"
+								},
+								{
+									"key": "discount",
+									"value": "25",
+									"type": "default",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/category/64497d430bc3ca5938badb92/subcategory/6449a48c07dfcf3527ef709b/brand/644bd126df5848d1bf58d0e1/product/updateproduct/644bd17fdf5848d1bf58d0e7",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"category",
+								"64497d430bc3ca5938badb92",
+								"subcategory",
+								"6449a48c07dfcf3527ef709b",
+								"brand",
+								"644bd126df5848d1bf58d0e1",
+								"product",
+								"updateproduct",
+								"644bd17fdf5848d1bf58d0e7"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete product",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0NDkwNWRkYjE5NDg5NGFjYTA2MjljZCIsImlhdCI6MTY4MjY4NzkxNCwiZXhwIjoxNjgyNjkxNTE0fQ.WAU4OSCTUVj7UNpO7qKlgd-RFtIIKn5uSezw_5QVfwg",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/product/deleteproduct/644bbea7cb7c60e4c0378223",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"product",
+								"deleteproduct",
+								"644bbea7cb7c60e4c0378223"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Coupon",
+			"item": [
+				{
+					"name": "create Coupon",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0NDkwNWRkYjE5NDg5NGFjYTA2MjljZCIsImlhdCI6MTY4NDEwNzAxNiwiZXhwIjoxNjg0MTEwNjE2fQ.OT0Z1g9v2GYJfwe44hMcSzrfvA2Zrj1oTQZ8ox3I5ZQ",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"code\":\"test66\",\r\n    \"fromDate\":\"2023-05-21\",\r\n    \"toDate\":\"2023-05-23\",\r\n    \"amount\":\"66\",\r\n    \"userUsage\":[\r\n        {\r\n            \"userId\":\"64493556e6e891be1a2b274d\",\r\n            \"maxUsage\":\"88\"\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/coupon/add",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"coupon",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update Coupon",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0NDkwNWRkYjE5NDg5NGFjYTA2MjljZCIsImlhdCI6MTY4NDE2MjQ3OSwiZXhwIjoxNjg0MTY2MDc5fQ.eB21ggQq6KXAX9SSFTNVHsIAxN0TJnRBRgy_KJtJ0J0",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"code\":\"test99\",\r\n    \"amount\":\"99\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/coupon/updatecoupon/64617141943c55cc208d12f5",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"coupon",
+								"updatecoupon",
+								"64617141943c55cc208d12f5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete Coupon",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0NDkwNWRkYjE5NDg5NGFjYTA2MjljZCIsImlhdCI6MTY4NDE2MzA1NiwiZXhwIjoxNjg0MTY2NjU2fQ.mndo5Dm6ZV1XLYdNPMdT9ZAE8PJFe37JhurWWeqonfk",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/coupon/deletecoupon/6461706b943c55cc208d12ea",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"coupon",
+								"deletecoupon",
+								"6461706b943c55cc208d12ea"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get all coupons with createdBy",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0NDkwNWRkYjE5NDg5NGFjYTA2MjljZCIsImlhdCI6MTY4NDE2NzM4MywiZXhwIjoxNjg0MTcwOTgzfQ.4HwfMSw2KYzN_i0pwrazweeAuYKou_sy4xk3GANppW0",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/coupon/allcoupons",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"coupon",
+								"allcoupons"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Cart",
+			"item": [
+				{
+					"name": "Add To Cart",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0NDkxZTlmZjYxNmI2NTI1ODBjNjU5ZCIsImlhdCI6MTY5MDE1NTExNSwiZXhwIjoxNjkwMTU4NzE1fQ.yfV9P6zGM0dVztia8fBl3B5OyPEhaxSeFxcwUpWp3hI",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"productId\":\"649d67e0d38cb97960790fa6\",\r\n    \"quantity\":\"3\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/cart/addtocart",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"cart",
+								"addtocart"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get Cart",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0NDkxZTlmZjYxNmI2NTI1ODBjNjU5ZCIsImlhdCI6MTY5MDEyODEwNCwiZXhwIjoxNjkwMTMxNzA0fQ.FnkBxYB5E9x8UZicVcqd_z631K71L0LSUrMS59dgAIk",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/cart/getcart",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"cart",
+								"getcart"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Remove Product  From Cart",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0NDkxZTlmZjYxNmI2NTI1ODBjNjU5ZCIsImlhdCI6MTY4ODAzNzY5MywiZXhwIjoxNjg4MDQxMjkzfQ.uOBh7dSCkY7xk1T93303sKIBJBMBsCD0vbRU7DeWYa8",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"productId\":\"649d67e0d38cb97960790fa6\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/cart/removeproductfromcart",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"cart",
+								"removeproductfromcart"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Order",
+			"item": [
+				{
+					"name": "cancel Order",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0NDkxZTlmZjYxNmI2NTI1ODBjNjU5ZCIsImlhdCI6MTY5MDEyODEwNCwiZXhwIjoxNjkwMTMxNzA0fQ.FnkBxYB5E9x8UZicVcqd_z631K71L0LSUrMS59dgAIk",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"reason\":\"changed me mind\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/order/64bd504378f44b5315867faa",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"order",
+								"64bd504378f44b5315867faa"
+							]
+						},
+						"description": "Note if i removed products from the body will check if there is cart if yes does it has will create order with it if not error"
+					},
+					"response": []
+				},
+				{
+					"name": "create Order",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0NDkxZTlmZjYxNmI2NTI1ODBjNjU5ZCIsImlhdCI6MTY5MDE1NTExNSwiZXhwIjoxNjkwMTU4NzE1fQ.yfV9P6zGM0dVztia8fBl3B5OyPEhaxSeFxcwUpWp3hI",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"products\":[\r\n        {\r\n            \"productId\":\"644bd17fdf5848d1bf58d0e7\",\r\n            \"quantity\":\"2\"\r\n        }\r\n    ],\r\n    \"address\":\"giza\",\r\n    \"phone\":\"011434326347\",\r\n    \"paymentMethod\":\"card\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/order/",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"order",
+								""
+							]
+						},
+						"description": "Note if i removed products from the body will check if there is cart if yes does it has will create order with it if not error"
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
